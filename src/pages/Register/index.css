@@ -1,0 +1,96 @@
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background-color: #f0f4f8;
+  padding: 20px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+}
+
+
+.formReg {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  width: 400px;
+}
+
+
+.reginput {
+  width: 100%;
+  padding: 12px 15px;
+  margin: 10px 0;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  transition: all 0.5s;
+}
+
+
+
+
+.btnReg {
+  width: 100%;
+  padding: 7px;
+  background-color: #007bff;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.5s;
+}
+
+.btnReg:hover {
+  background-color: #0056b3;
+}
+
+span {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  
+}
+
+
+
+
+.input-wrapper {
+  position: relative;
+}
+
+.reginput {
+  padding-right: 40px;
+}
+
+.eye-icon {
+  cursor: pointer;
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+
+}
+
+
+
+.btnLogin {
+  width: 100%;
+  padding: 7px;
+  background-color: #28a745;
+  color: #ffffff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: all 0.5s;
+  margin-top: 10px;
+}
+
+.btnLogin:hover {
+  background-color: #218838;
+}
