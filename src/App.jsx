@@ -16,29 +16,31 @@ import MainLayout from "./layout/MainLayout";
 
 function App() {
   const [token, setToken] = useState(localStorage.getItem("token"));
-
   const navigate = useNavigate();
   const location = useLocation();
 
+  
   function PrivateRoute({ isAuth, children }) {
-    if (!isAuth) {
-      return <Navigate to="/login" />;
-    }
-    return children;
+    return isAuth ? children : <Navigate to="/login" />;
   }
 
   useEffect(() => {
-    if (localStorage.getItem("token")) {
-      setToken(localStorage.getItem("token"));
+    
+    const storedToken = localStorage.getItem("token");
+    
+   
+    if (storedToken) {
+      setToken(storedToken);
     } else {
+      
       if (!location.pathname.includes("register")) {
-        navigate("login");
+        navigate("/login");
       }
     }
-  }, [navigate]);
+  }, [navigate, location.pathname]); 
 
   return (
-    <>
+    <div className="container_app">
       <Routes>
         <Route
           path="/"
@@ -64,7 +66,7 @@ function App() {
         <Route path="/login" element={<Login />} />
         <Route path="*" element={<ErrorPage />} />
       </Routes>
-    </>
+    </div>
   );
 }
 

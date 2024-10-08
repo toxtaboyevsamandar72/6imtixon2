@@ -1,0 +1,38 @@
+.details-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+  margin-top: 50px;
+}
+
+.cards {
+  background-color: #ffffff;
+  border-radius: 10px;
+background-color: #555;
+  width: 300px;
+  text-align: center;
+}
+
+.card-imag img {
+  width: 80%;
+  height: auto;
+  object-fit: cover;
+ 
+}
+
+.card-content {
+  padding: 20px;
+}
+
+.card-content h1 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.card-content p {
+  font-size: 16px;
+  color: #555;
+}
