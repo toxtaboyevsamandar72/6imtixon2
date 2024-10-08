@@ -37,7 +37,6 @@ function Details() {
           <div className="card">
             <div className="card-content">
               <h1>{book.title}</h1>
-              
               <p>Authors: {book.authors.join(", ")}</p>
               <p>Categories: {book.categories.join(", ")}</p>
             </div>
