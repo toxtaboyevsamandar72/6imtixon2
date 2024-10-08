@@ -20,7 +20,7 @@ function handleLogout(event) {
       <header className='header w-full bg-blue-50 py-3 px-20'>
         <div className='mx-auto flex justify-between items-center'>
         <div className='logo'>
-          <a href="https://kun.uz">LOGO</a>
+          <a href="#">LOGO</a>
         </div>
         <nav>
           <button onClick={handleLogout} className='brn bg-blue-700 py-3 px-6 rounded-md text-white' >Logout</button>

@@ -28,18 +28,18 @@ function Details() {
     <div className="details-container">
       {book ? (
         <>
-        
           <div className="card">
             <div className="card-image">
-              <img src={book.thumbnailUrl}  />
+              <img src={book.thumbnailUrl} alt={book.title} />
             </div>
           </div>
 
-          
           <div className="card">
             <div className="card-content">
               <h1>{book.title}</h1>
               <p>{book.description}</p>
+              <p>Authors: {book.authors.join(", ")}</p>
+              <p>Categories: {book.categories.join(", ")}</p>
             </div>
           </div>
         </>
